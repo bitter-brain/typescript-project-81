@@ -1,0 +1,49 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/bitter-brain/typescript-project-81/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/bitter-brain/typescript-project-81/actions)",
+  "author": "bitter-brain",
+  "license": "ISC",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=21"
+  },
+  "homepage": "https://github.com/bitter-brain/typescript-project-81#readme",
+  "bugs": {
+    "url": "https://github.com/bitter-brain/typescript-project-81/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitter-brain/typescript-project-81.git"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "exec": "npx tsx ./src/index.ts",
+    "lint": "npx eslint .",
+    "test": "vitest"
+  },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^25.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.58.1",
+    "@typescript-eslint/parser": "^8.58.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "jiti": "^2.6.1",
+    "npm-check-updates": "^20.0.0",
+    "simple-git-hooks": "^2.13.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.1",
+    "vitest": "^4.1.4"
+  }
+}
