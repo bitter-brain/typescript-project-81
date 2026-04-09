@@ -11,7 +11,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=21"
+    "node": ">=22"
   },
   "homepage": "https://github.com/bitter-brain/typescript-project-81#readme",
   "bugs": {
