@@ -10,7 +10,9 @@ class Tag {
     if (selfClosingTags.includes(this.tag)) {
       return attrString ? `<${this.tag} ${attrString}>` : `<${this.tag}>`
     }
-    return attrString ? `<${this.tag} ${attrString}>${this.label}</${this.tag}>` : `<${this.tag}></${this.tag}>`
+    return attrString
+      ? `<${this.tag} ${attrString}>${this.label}</${this.tag}>`
+      : `<${this.tag}>${this.label}</${this.tag}>`
   }
 }
 
