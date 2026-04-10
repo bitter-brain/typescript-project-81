@@ -1,5 +1,6 @@
 install:
 	npm ci
+	npm run build
 
 develop:
 	npm run start:dev
