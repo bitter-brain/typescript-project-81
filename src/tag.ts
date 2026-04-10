@@ -8,7 +8,9 @@ class Tag {
       .map(([key, value]) => `${key}="${value}"`)
       .join(' ')
     if (selfClosingTags.includes(this.tag)) {
-      return attrString ? `<${this.tag} ${attrString}>` : `<${this.tag}>`
+      return attrString
+        ? `<${this.tag} ${attrString}>`
+        : `<${this.tag}>`
     }
     return attrString
       ? `<${this.tag} ${attrString}>${this.label}</${this.tag}>`
