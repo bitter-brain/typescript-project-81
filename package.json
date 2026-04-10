@@ -25,6 +25,7 @@
     "url": "git+https://github.com/bitter-brain/typescript-project-81.git"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "rm -rf ./dist && tsc",
     "exec": "npx tsx ./src/index.ts",
     "lint": "npx eslint .",
