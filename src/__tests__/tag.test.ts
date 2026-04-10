@@ -20,4 +20,3 @@ test('Tag', () => {
   const file6 = new Tag('div')
   expect(file6.toString()).toBe('<div></div>')
 })
-

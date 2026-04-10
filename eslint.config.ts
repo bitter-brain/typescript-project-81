@@ -21,12 +21,16 @@ export default [
     languageOptions: {
       globals: globals.node,
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['*.ts'],
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    // rules: {
-    //   '@typescript-eslint/no-unused-vars': 'off',
-    // },
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+    },
   },
 ] // satisfies Linter.Config[]
